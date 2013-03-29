@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>wordwar</title>
+ <link rel="stylesheet" type="text/css" href="wordwar.css">
+ <script src='wordwar.js'></script>
+ <script src='gamestate.js'></script>
+ <script src='dictionary.js'></script>
+ <script src='placement.js'></script>
+</head>
+<body onload="init()">
+<div class='main'>
+<table class='score-line'>
+ <tr>
+  <td class='score' id='blue-score'></td>
+  <td class='controls'>
+   <span id='statusMessage'></span>
+   <br/>
+   <button id='btnPlay' onclick='play()' disabled>Play</button>
+   <button id='btnClear' onclick='resetRack()' disabled>Clear</button>
+   &emsp;
+   <button id='btnNewGame' onclick='newGame()' disabled>New Game</button>
+  </td>
+  <td class='score' id='red-score'></td>
+ </tr>
+</table>
+<table class='rack' ondragover='dragOverRack(event)' ondrop='dropLetter(event)'>
+ <tr id='rack'><td id='spacer'>&emsp;</td></tr>
+</table>
+<div class='board-holder' id='board-holder'><p class='loading' id='loadingPlaceholder'>Loading...</p></div>
+</div>
+</body>
+</html>

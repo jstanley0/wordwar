@@ -1,0 +1,110 @@
+.main {
+    width: 412px;
+}
+
+.loading {
+    width: 100%;
+    text-align: center;
+    padding-top: 100px;
+    font-size: large;
+}
+
+.thing { 
+    background-color: white;
+    margin: 20px;
+    padding: 5px;
+}
+
+.rack {
+    height: 58px;
+    width: 100%;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+.board {
+    width: 100%;
+    border: 1px solid black;
+    border-spacing: 0px;
+}
+
+.board .letter {
+   width: 80px;
+   height: 80px;
+   text-align: center;
+   font-size: xx-large;
+   font-family: sans-serif;
+   cursor: pointer;
+   color: black;
+}
+
+.board .letter.red, .racked.red {
+    background-color: #ffcfcf;
+}
+
+.board .letter.blue, .racked.blue {
+    background-color: #c4cfff;
+}
+
+.board .letter.red.locked, .racked.red.locked {
+    background-color: #ff7f7f;
+}
+
+.board .letter.blue.locked, .racked.blue.locked {
+    background-color: #747fff;
+}
+
+.board .inplay {
+   visibility: hidden; 
+}
+
+.board .even {
+    background-color: #f4f4f4;
+}
+
+.board .odd {
+    background-color: #f9f9f9;
+}
+
+.racked {
+    width: 40px;
+    height: 50px;
+    text-align: center;
+    font-size: x-large;
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    cursor: pointer;    
+}
+
+.score-line {
+    width: 100%;
+    padding-bottom: 5px;
+}
+
+.score-line .controls {
+    text-align: center;
+}
+
+.score {
+    font-size: xx-large;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.to-play {
+    border-bottom: 4px solid;
+}
+
+.won {
+    border: 3px dashed;
+}
+
+#blue-score {
+    color: #747fff;
+}
+
+#red-score {
+    color: #ff7f7f;
+}
+
